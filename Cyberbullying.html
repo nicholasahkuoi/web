@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="hero-image2">
+        <h1 class="hero-text">
+            Exposure to Negative Content and Cyberbullying
+        </h1>
+    </section>
+
+    <section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="connections.html" >Connections</a></li>
+            <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
+            <li><a href="Influence.html">Influence</a></li>
+          </ul>
+
+    </section>
+
+      <!-- Two columns layout start -->
+      <section class="two-column">
+        <div 
+             alt="Cyberbullying">
+             <img src="images/download.jpg" alt="Trulli" width="500" height="333">
+
+        </div>
+        <div class="column">
+            <h2>Cyberbullying</h2>
+            <h2>HTML Image</h2>
+            
+            <p style="text-align: center;">The Hidden Dangers of Social Media
+                While social media offers many benefits, it can also expose teenagers to harmful experiences such as cyberbullying, harassment, and negative content. These challenges can significantly affect a teen’s mental health and overall well-being.
+                
+            </p>
+        
+            <ul class="a"> 
+                <li>Cyberbullying: Hurtful comments, rumors, and online harassment that can lead to anxiety, depression, and even suicidal thoughts.</li>
+                <li>Negative Content: Exposure to harmful images, hate speech, and unrealistic standards that contribute to stress and lowered self-esteem.</li>
+                <li>Social Pressure: Teens may feel pressured to conform to trends or engage in risky behavior to fit in online.</li>
+            </ul> 
+        
+            What You Should Know:
+            Research indicates that teens who experience cyberbullying are more likely to struggle 
+            <img src="images/istock-953782406.jpg" alt="Trulli" width="500" height="333">
+
+        
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+</body>
+</html>   

@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyberbullying Awareness</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <section class="hero-image2">
-        <h1 class="hero-text">
-            Exposure to Negative Content and Cyberbullying
-        </h1>
-    </section>
 
-    <section>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="connections.html" >Connections</a></li>
-            <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
-            <li><a href="Influence.html">Influence</a></li>
-          </ul>
+  
 
-    </section>
+  <!-- Hero Slideshow -->
+  <section class="hero-image">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Screenshot 2025-06-26 114905.png" alt="Anxiety and Stress" />
+      <div class="hero-text">Exposure to Negative Content and Cyberbullying</div>
+      <div class="text">slide 1</div>
+    </div>
 
-      <!-- Two columns layout start -->
-      <section class="two-column">
-        <div 
-             alt="Cyberbullying">
-             <img src="images/download.jpg" alt="Trulli" width="500" height="333">
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Screenshot 2025-06-26 115007.png" alt="Chess" />
+      <div class="hero-text">Exposure to Negative Content and Cyberbullying</div>
+      <div class="text">slide 2</div>
+    </div>
 
-        </div>
-        <div class="column">
-            <h2>Cyberbullying</h2>
-            <h2>HTML Image</h2>
-            
-            <p style="text-align: center;">The Hidden Dangers of Social Media
-                While social media offers many benefits, it can also expose teenagers to harmful experiences such as cyberbullying, harassment, and negative content. These challenges can significantly affect a teen’s mental health and overall well-being.
-                
-            </p>
-        
-            <ul class="a"> 
-                <li>Cyberbullying: Hurtful comments, rumors, and online harassment that can lead to anxiety, depression, and even suicidal thoughts.</li>
-                <li>Negative Content: Exposure to harmful images, hate speech, and unrealistic standards that contribute to stress and lowered self-esteem.</li>
-                <li>Social Pressure: Teens may feel pressured to conform to trends or engage in risky behavior to fit in online.</li>
-            </ul> 
-        
-            What You Should Know:
-            Research indicates that teens who experience cyberbullying are more likely to struggle 
-            <img src="images/istock-953782406.jpg" alt="Trulli" width="500" height="333">
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Screenshot 2025-06-26 115308.png" alt="Tablet" />
+      <div class="hero-text">Exposure to Negative Content and Cyberbullying</div>
+      <div class="text">slide 3</div>
+    </div>
 
-        
-        </div>
-    </section>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </section>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-    
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+
+
+<!-- Navigation Bar -->
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="connections.html" >Connections</a></li>
+  <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
+  <li><a href="Influence.html">Influence</a></li>
+</ul>
+
+  <!-- Two columns layout start -->
+  <section class="two-column">
+    <div>
+      <img src="images/Screenshot 2025-06-26 115409.png" alt="Cyberbullying" width="500" height="333" />
+    </div>
+    <div class="column">
+      <h2>Cyberbullying</h2>
+      <p>The Hidden Dangers of Social Media</p>
+      <p>
+        While social media offers many benefits, it can also expose teenagers to harmful experiences such as cyberbullying, harassment, and negative content. These challenges can significantly affect a teen’s mental health and overall well-being.
+      </p>
+      <ul class="a"> 
+        <li>Cyberbullying: Hurtful comments, rumors, and online harassment that can lead to anxiety, depression, and even suicidal thoughts.</li>
+        <li>Negative Content: Exposure to harmful images, hate speech, and unrealistic standards that contribute to stress and lowered self-esteem.</li>
+        <li>Social Pressure: Teens may feel pressured to conform to trends or engage in risky behavior to fit in online.</li>
+      </ul> 
+      <p>What You Should Know: Research indicates that teens who experience cyberbullying are more likely to struggle.</p>
+      <img src="images/Screenshot 2025-06-26 115558.png" alt="Effects of Cyberbullying" width="500" height="333" />
+    </div>
+  </section>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
 </body>
-</html>   
+</html>

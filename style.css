@@ -4,7 +4,7 @@
 
 .hero-image{
     background-image:url("./images/social\ media\ 3.jpg") ;
-    height: 350px;
+    height: 390px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@
 
 .hero-image2{
     background-image:url("./images/social\ media\ 2.jpg") ;
-    height: 350px;
+    height: 390px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +20,7 @@
 
 .hero-image3{
     background-image:url("./images/social\ media\ 4.jpg") ;
-    height: 350px;
+    height: 390px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
 
 .hero-image4{
     background-image:url("./images/social\ media.jpg") ;
-    height: 350px;
+    height: 390px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,6 +76,7 @@
     color: whitesmoke;
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -110,6 +111,6 @@ ul {
 ul.a {
     background-color: #ffffff;
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: top;
 
   }

@@ -1,55 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Positive Connections</title>
+
+  <!-- Font Awesome for Search Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .highlighted {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <section class="hero-image3">
-        <h1 class="hero-text">
-            Positive Connection and Support
-        </h1>
-    </section>
 
-    <section>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="connections.html" >Connections</a></li>
-            <li><a href="Cyberbullying.html">Cyberbullying</a></li>
-            <li><a href="Influence.html">Influence</a></li>
-          </ul>
+  <!-- Hero Slideshow -->
+  <section class="hero-image">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/employee_connection.jpg" alt="Anxiety and Stress" />
+      <div class="hero-text">Positive Connection and Support</div>
+      <div class="text">slide 1</div>
+    </div>
 
-    </section>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/connection 2.jpg" alt="Chess" />
+      <div class="hero-text">Positive Connection and Support</div>
+      <div class="text">slide 2</div>
+    </div>
 
-      <!-- Two columns layout start -->
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Implementation-support1.jpg" alt="Tablet" />
+      <div class="hero-text">Positive Connection and Support</div>
+      <div class="text">slide 3</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </section>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="connections.html">Connections</a></li>
+      <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="Influence.html">Influence</a></li>
+
+       <!-- Search Bar -->
+      <div class="search-bar-wrapper">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search..." 
+            onkeypress="if(event.key === 'Enter') performSearch()" 
+          />
+          <i class="fas fa-search" onclick="performSearch()"></i>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Main Content (Searchable Area) -->
+  <main id="mainContent">
+
+    <!-- Two-Column Layout -->
     <section class="two-column">
-        <div 
-             alt="Connections">
-             <img src="images/istock-953782406.jpg" alt="Trulli" width="500" height="333">
+      <div class="column-image">
+        <img src="images/happy-resilient-teens.jpg" alt="Teens hugging" width="500" height="333" />
+        <img src="images/D430_50_076_1200.jpg" alt="Online group chat" width="500" height="333" style="margin-top: 20px;" />
+      </div>
 
-        </div>
-        <div class="column">
-            <h2>Positive Connection and Support</h2>
-            <h2>HTML Image</h2>
-            
-            <p style="text-align: center;">Building Meaningful Relationships Online
-                Social media provides teenagers with opportunities to connect with friends, family, and peers beyond geographical boundaries. Through platforms like Instagram, TikTok, and Snapchat, teens can join groups and communities that share their interests, hobbies, and challenges.
-                Benefits Include:
-            </p>
-        
-            <ul class="a"> 
-                <li>Emotional Support: Teens can find comfort and advice from online friends during difficult times.</li>
-                <li>Sense of Belonging: Social media helps teenagers feel less isolated by creating spaces where they can express themselves and be accepted.</li>
-                <li>Access to Resources: Many social platforms offer access to mental health resources, educational content, and positive role models.</li>
-            </ul> 
-        
-            Did You Know?
-            Studies show that teenagers who engage positively on social media report higher levels of social support and better emotional well-being.
-            <img src="images/istock-953782406.jpg" alt="Trulli" width="500" height="333">
+      <div class="column">
+        <h2>Positive Connection and Support</h2>
+        <p style="text-align: center;">
+          <strong>Why Positive Connections Matter</strong><br />
+          In a world increasingly shaped by digital interaction, forming strong, supportive relationships online can significantly improve emotional and social well-being.
+        </p>
 
-           
+        <h3 style="text-align: center;">Benefits of Healthy Online Relationships:</h3>
+        <ul class="a">
+          <li><strong>Emotional Resilience:</strong> Receiving positive feedback or comfort during hard times can reduce anxiety and boost self-esteem.</li>
+          <li><strong>Safe Spaces to Share:</strong> Online groups often allow teens to express feelings without judgment — whether it’s about school stress, identity, or personal challenges.</li>
+          <li><strong>Collaborative Learning:</strong> Connecting with classmates or mentors online enables shared learning experiences and support for schoolwork or personal growth.</li>
+          <li><strong>Global Friendships:</strong> Teens can make friends from around the world, expanding their cultural awareness and empathy.</li>
+        </ul>
+
+        <div style="text-align: center;">
+          <h3>Real-Life Example</h3>
+          <p>
+            A group of teens struggling with anxiety formed a private Discord server where they check in with each other every evening. Over time, this group became a lifeline of daily motivation and care.
+          </p>
         </div>
-        
+
+        <img src="images/64652026d10a745d9b6f3a83_iStock-1324921320.jpg" alt="Online support group" width="500" height="333" style="margin-top: 20px;" />
+      </div>
+    </section>
+
+    <!-- Extra Section: How to Build Positive Connections -->
+    <section style="padding: 40px; background-color: #f9f9f9; text-align: center;">
+      <h2>How to Build Positive Connections Online</h2>
+      <p style="max-width: 800px; margin: auto;">
+        Building a positive online presence starts with kindness and respect. Listen, encourage others, and engage in communities that uplift you. Avoid toxic spaces, block harmful content, and always be mindful of how your words affect others.
+      </p>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+        <img src="images/connections image.webp" alt="Positive conversation" width="300" height="200" />
+        <img src="images/support.jpg" alt="Teen group support" width="300" height="200" />
+        <img src="images/group-of-friends-bonding-hands-together-photo.jpg" alt="Friends bonding" width="300" height="200" />
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+  </script>
+
+  <!-- Search Script -->
+  <script>
+  function performSearch() {
+    const input = document.getElementById("searchInput").value.trim();
+    
+    if (!input) {
+      alert("Please enter a search term.");
+      return;
+    }
+
+    // Remove old highlights
+    const highlighted = document.querySelectorAll(".highlighted");
+    highlighted.forEach(el => {
+      el.outerHTML = el.textContent;
+    });
+
+    let found = false;
+    const contentArea = document.getElementById("mainContent");
+    const textElements = contentArea.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li, div, span");
+
+    // Escape special characters in input for safe regex use
+    const escapedInput = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedInput})`, "gi");
+
+    textElements.forEach(el => {
+      if (regex.test(el.innerHTML)) {
+        found = true;
+        el.innerHTML = el.innerHTML.replace(regex, '<span class="highlighted">$1</span>');
+      }
+    });
+
+    if (found) {
+      const firstMatch = document.querySelector(".highlighted");
+      if (firstMatch) {
+        firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      alert("No matches found.");
+    }
+  }
+</script>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>This site explores the effects of social media on teens' mental health, education, and well-being.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="connections.html">Connections</a></li>
+      <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="Influence.html">Influence</a></li>
+      </ul>
+    </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/groups/mentalhealthawarenesssupport" target="_blank" title="Mental Health Awareness and Support Group on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/mentalhealth" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Digital Wellness Project. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
+</html>

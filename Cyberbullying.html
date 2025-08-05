@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cyberbullying Awareness</title>
   <link rel="stylesheet" href="style2.css" />
+
+  <!-- Font Awesome for search icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-
-  
 
   <!-- Hero Slideshow -->
   <section class="hero-image">
@@ -21,14 +25,14 @@
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="images/Screenshot 2025-06-26 115007.png" alt="Chess" />
+      <img src="images/Screenshot 2025-06-26 115007.png" alt="Chess game metaphor" />
       <div class="hero-text">Exposure to Negative Content and Cyberbullying</div>
       <div class="text">slide 2</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="images/Screenshot 2025-06-26 115308.png" alt="Tablet" />
+      <img src="images/Screenshot 2025-06-26 115308.png" alt="Teen using a tablet" />
       <div class="hero-text">Exposure to Negative Content and Cyberbullying</div>
       <div class="text">slide 3</div>
     </div>
@@ -37,40 +41,61 @@
     <a class="next" onclick="plusSlides(1)">❯</a>
   </section>
 
-  <div class="dots-container">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
 
-
-
-<!-- Navigation Bar -->
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="connections.html" >Connections</a></li>
-  <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
-  <li><a href="Influence.html">Influence</a></li>
-</ul>
-
-  <!-- Two columns layout start -->
-  <section class="two-column">
-    <div>
-      <img src="images/Screenshot 2025-06-26 115409.png" alt="Cyberbullying" width="500" height="333" />
+  <!-- Navigation Bar -->
+  <section>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="connections.html">Connections</a></li>
+      <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="Influence.html">Influence</a></li>
+      
+      <!-- Search Bar -->
+       <div class="search-bar-wrapper">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search..." 
+            onkeypress="if(event.key === 'Enter') performSearch()" 
+          />
+          <i class="fas fa-search" onclick="performSearch()"></i>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Main Content (Searchable) -->
+  <section id="mainContent" class="two-column" style="background-color: #fef5f5; padding: 40px;">
+    <div class="column-image">
+      <img src="images/cyberbulling.png" alt="Cyberbullying Warning Sign" width="500" height="333" />
+      <img src="images/effects_of_cyberbullying_blog_WIP.png" alt="Example of Negative Online Chat" width="500" height="333" style="margin-top: 20px;" />
+    </div>
+
     <div class="column">
-      <h2>Cyberbullying</h2>
-      <p>The Hidden Dangers of Social Media</p>
-      <p>
-        While social media offers many benefits, it can also expose teenagers to harmful experiences such as cyberbullying, harassment, and negative content. These challenges can significantly affect a teen’s mental health and overall well-being.
+      <h2 style="color: #c0392b;">Cyberbullying: A Digital Threat</h2>
+
+      <p style="text-align: center;">
+        <strong>The Dark Side of Online Interaction</strong><br />
+        Cyberbullying is a silent epidemic in the digital age. Unlike traditional bullying, it follows teens everywhere — into their homes, bedrooms, and even dreams. The damage can be emotional, social, and long-lasting.
       </p>
-      <ul class="a"> 
-        <li>Cyberbullying: Hurtful comments, rumors, and online harassment that can lead to anxiety, depression, and even suicidal thoughts.</li>
-        <li>Negative Content: Exposure to harmful images, hate speech, and unrealistic standards that contribute to stress and lowered self-esteem.</li>
-        <li>Social Pressure: Teens may feel pressured to conform to trends or engage in risky behavior to fit in online.</li>
-      </ul> 
-      <p>What You Should Know: Research indicates that teens who experience cyberbullying are more likely to struggle.</p>
-      <img src="images/Screenshot 2025-06-26 115558.png" alt="Effects of Cyberbullying" width="500" height="333" />
+
+      <h3 style="color: #b03a2e;">Forms of Cyberbullying:</h3>
+      <ul class="a">
+        <li><strong>Public Shaming:</strong> Posting embarrassing photos or videos without consent.</li>
+        <li><strong>Anonymous Threats:</strong> Receiving hateful or intimidating messages from unknown accounts.</li>
+        <li><strong>Exclusion:</strong> Being purposely left out of group chats or online communities.</li>
+        <li><strong>Impersonation:</strong> Fake accounts pretending to be someone else to cause harm.</li>
+      </ul>
+
+      <div style="text-align: center;">
+        <h3 style="color: #a93226;">Real Impact</h3>
+        <p>
+          Victims of cyberbullying often experience isolation, poor academic performance, and emotional withdrawal. It can affect confidence and trust, even in offline friendships.
+        </p>
+      </div>
+
+      <img src="images/clearwater-cyber-bullying-sexting-revenge-porn.jpg" alt="Teens affected by cyberbullying" width="500" height="333" style="margin-top: 20px;" />
     </div>
   </section>
 
@@ -83,29 +108,99 @@
       showSlides(slideIndex += n);
     }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
     function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-
-      for (i = 0; i < slides.length; i++) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
+      slides[slideIndex - 1].style.display = "block";
+    }
 
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+  </script>
+
+  <!-- Search Script -->
+  <script>
+    function performSearch() {
+      const input = document.getElementById("searchInput").value.trim();
+
+      if (!input) {
+        alert("Please enter a search term.");
+        return;
       }
 
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      // Remove existing highlights
+      const oldHighlights = document.querySelectorAll(".highlighted");
+      oldHighlights.forEach(span => {
+        span.outerHTML = span.textContent;
+      });
+
+      const content = document.getElementById("mainContent");
+      const elements = content.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li, div, span");
+
+      const escapedInput = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(${escapedInput})`, "gi");
+
+      let found = false;
+
+      elements.forEach(el => {
+        if (regex.test(el.innerHTML)) {
+          el.innerHTML = el.innerHTML.replace(regex, '<span class="highlighted">$1</span>');
+          found = true;
+        }
+      });
+
+      if (found) {
+        const first = document.querySelector(".highlighted");
+        if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        alert("No matches found.");
+      }
     }
   </script>
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>This site explores the effects of social media on teens' mental health, education, and well-being.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="connections.html">Connections</a></li>
+        <li><a class="active" href="Cyberbullying.html">Cyberbullying</a></li>
+        <li><a href="Influence.html">Influence</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/groups/mentalhealthawarenesssupport" target="_blank" title="Mental Health Awareness and Support Group on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/mentalhealth" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Digital Wellness Project. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
 </html>

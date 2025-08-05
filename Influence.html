@@ -1,84 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Influence on Self-Identity and Self-Esteem</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .highlighted {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .search-bar-wrapper {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .search-container input {
+      padding: 5px;
+      font-size: 16px;
+    }
+    .search-container i {
+      cursor: pointer;
+      padding-left: 5px;
+    }
+  </style>
 </head>
+
 <body>
-    <section class="hero-image4">
-        <h1 class="hero-text">
-            Influence
-        </h1>
-    </section>
 
-    <section>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="connections.html" >Connections</a></li>
-            <li><a href="Cyberbullying.html">Cyberbullying</a></li>
-            <li><a class="active" href="Influence.html">Influence</a></li>
-          </ul>
+  <!-- Hero Slideshow -->
+  <section class="hero-image">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Infulence.jpg" alt="Teen looking thoughtfully at phone" />
+      <div class="hero-text">Influence on Self-Identity and Self-Esteem</div>
+      <div class="text">slide 1</div>
+    </div>
 
-    </section>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Influence 2.jpg" alt="Teen scrolling social media" />
+      <div class="hero-text">Influence on Self-Identity and Self-Esteem</div>
+      <div class="text">slide 2</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/influence 3.jpg" alt="Teen smiling while using tablet" />
+      <div class="hero-text">Influence on Self-Identity and Self-Esteem</div>
+      <div class="text">slide 3</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </section>
+
+ 
+   <!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="connections.html">Connections</a></li>
+    <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+    <li><a class="active" href="Influence.html">Influence</a></li>
+
+    <!-- Search Bar -->
+    <div class="search-bar-wrapper">
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search..." 
+          onkeypress="if(event.key === 'Enter') performSearch()" 
+        />
+        <i class="fas fa-search" onclick="performSearch()"></i>
+      </div>
+    </div>
+  </ul>
+</nav>
 
 
-    <!-- Two columns layout start -->
-    <section class="two-column">
-        <div class="image">
-            <img src="./images/frinds.jpg" alt="Makeing Friends">
-        </div>
-        <div class="info">
-            <h1>Makeing Friends</h1>
-            <p>Making friends with digital technology means understanding how to use devices, apps, and the internet in positive and meaningful ways. It’s about building healthy habits, staying safe online, and using technology to connect with others, learn new things, and solve problems. By using digital tools responsibly, we can make our experiences more enjoyable and productive while also protecting our well-being.</p>
-        </div>
-    </section>
-    <!-- Two columns layout end -->
-      <!-- Two columns layout start -->
-    <section class="two-column">
-        <div class="image">
-            <img src="./images/cyber bullying.jpg" alt="Cyber Bullying">
-        </div>
-        <div class="info">
-            <h1>Cyber Bullying</h1>
-            <p>Cyberbullying refers to the use of digital platforms (such as social media, texting, or online forums) to harass, intimidate, or harm someone. It can involve spreading harmful rumors, sending hurtful messages, sharing embarrassing photos or videos without consent, and more.
+  <!-- Content -->
+  <section class="two-column" style="background-color: #f7faff; padding: 40px;" id="mainContent">
+    <div class="image">
+      <img src="images/know-yourself.jpg" alt="Person looking in mirror" />
+    </div>
+    <div class="info">
+      <h1 style="color: #2a3b5f;">Influence on Self-Identity and Self-Esteem</h1>
+      <p>
+        Social media and digital platforms are powerful forces in shaping how young people see themselves. From curated profiles to follower counts, teens often compare their lives to idealized versions of others — which can deeply impact their self-image and confidence.
+      </p>
+      <ul>
+        <li><strong>Online Personas:</strong> Teens may feel pressure to create a perfect image online, which can cause identity confusion, anxiety, and stress over maintaining appearances.</li>
+        <li><strong>Validation Loop:</strong> Receiving likes, comments, and shares can give temporary boosts to self-esteem, but lack of engagement can lead to feelings of rejection or low self-worth.</li>
+        <li><strong>Positive Role Models:</strong> Exposure to diverse and inspiring influencers or peer groups can promote self-expression, creativity, and encourage personal growth.</li>
+        <li><strong>Community Support:</strong> Finding online communities where teens feel accepted helps foster a sense of belonging, which is critical to healthy identity development.</li>
+      </ul>
+      <p>
+        Understanding how the digital world influences self-perception is essential for nurturing authenticity over perfection. Encouraging teens to embrace their true selves can help them build a stronger, more resilient sense of identity and self-esteem.
+      </p>
+    </div>
+  </section>
 
-                Cyberbullying can have serious emotional, psychological, and even physical consequences for the victim. It can be particularly damaging because it's not confined to one space or time—it's persistent and can follow someone wherever they go, especially with smartphones and social media.
-                
-                Do you want to talk about how to deal with it, or are you looking for more information on its effects?
-                
-                
-                
-                
-                 </p>
+   <!-- Slideshow Script -->
+   <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+  </script>
+
+
+
+  <!-- Search Script -->
+  <script>
+  function performSearch() {
+    const input = document.getElementById("searchInput").value.trim();
+    
+    if (!input) {
+      alert("Please enter a search term.");
+      return;
+    }
+
+    // Remove old highlights
+    const highlighted = document.querySelectorAll(".highlighted");
+    highlighted.forEach(el => {
+      el.outerHTML = el.textContent;
+    });
+
+    let found = false;
+    const contentArea = document.getElementById("mainContent");
+    const textElements = contentArea.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li, div, span");
+
+    // Escape special characters in input for safe regex use
+    const escapedInput = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedInput})`, "gi");
+
+    textElements.forEach(el => {
+      if (regex.test(el.innerHTML)) {
+        found = true;
+        el.innerHTML = el.innerHTML.replace(regex, '<span class="highlighted">$1</span>');
+      }
+    });
+
+    if (found) {
+      const firstMatch = document.querySelector(".highlighted");
+      if (firstMatch) {
+        firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      alert("No matches found.");
+    }
+  }
+</script>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>This site explores the effects of social media on teens' mental health, education, and well-being.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="connections.html">Connections</a></li>
+      <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+      <li><a class="active" href="Influence.html">Influence</a></li>
+      </ul>
+    </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/groups/mentalhealthawarenesssupport" target="_blank" title="Mental Health Awareness and Support Group on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/mentalhealth" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </section>
-    <!-- Two columns layout end -->
-       <!-- Two columns layout start -->
-    <section class="two-column">
-        <div class="image">
-            <img src="./images/mental health.jpg" alt="Mental Health">
-        </div>
-        <div class="info">
-            <h1>Mental Health</h1>
-            <p>Digital technology can significantly impact teens' mental health in both positive and negative ways. On one hand, it offers opportunities for social connection, self-expression, and access to helpful resources. However, excessive use, especially of social media, can lead to anxiety, depression, and low self-esteem as teens compare themselves to idealized online images and feel pressure to maintain a perfect digital persona. Cyberbullying is another serious issue, causing emotional distress that can lead to feelings of isolation or even suicidal thoughts. Additionally, constant notifications and screen time can disrupt sleep and increase stress, further harming mental well-being. Overall, while digital technology can support teens, without balance and guidance, it can contribute to significant mental health challenges.  </p>
-        </div>
-    </section>
-    <!-- Two columns layout end -->
-     <section class="three-column">
-        <div class="card">
-            <img src="./images/education.jpg" alt="Impact on Academic Performance">
-            <h2 class="card-text">Impact on Academic Performance</h2>
-        </div>
-        <div class="card">
-            <img src="./images/harm.jpg" alt="Exposure to Harmful Content">
-            <h2 class="card-text">Exposure to Harmful Content</h2>
-        </div>
-        <div class="card">
-            <img src="./images/sleep.jpg" alt="Sleep Disruption">
-            <h2 class="card-text">Sleep Disruption</h2>
-        </div>
-     </section>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Digital Wellness Project. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
-</html>   
+</html>

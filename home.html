@@ -1,84 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css" />
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    .highlighted {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 2px;
+    }
+  </style>
 </head>
 <body>
-    <section class="hero-image">
-        <h1 class="hero-text">
-            Social Media On Teenager's Mental Health
-        </h1>
-    </section>
+  <!-- Hero Slideshow -->
+  <section class="hero-image">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/social-media-1.jpg" alt="Anxiety and Stress" />
+      <div class="hero-text">Social Media On Teenager's Mental Health </div>
+      <div class="text">slide 1</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/social_media_2.webp" alt="Chess" />
+      <div class="hero-text">Social Media On Teenager's Mental Health </div>
+      <div class="text">slide 2</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Social-media-3.webp" alt="Tablet" />
+      <div class="hero-text">Social Media On Teenager's Mental Health </div>
+      <div class="text">slide 3</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </section>
 
-    <section>
-        <ul>
-            <li><a class="active"href="#home">Home</a></li>
-            <li><a href="connections.html" >Connections</a></li>
-            <li><a href="Cyberbullying.html">Cyberbullying</a></li>
-            <li><a href="Influence.html">Influence</a></li>
-          </ul>
+  <!-- Navigation Bar -->
+  <section>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="connections.html">Connections</a></li>
+      <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+      <li><a href="Influence.html">Influence</a></li>
 
-    </section>
+      <!-- Search Bar -->
+      <div class="search-bar-wrapper">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search..." 
+            onkeypress="if(event.key === 'Enter') performSearch()" 
+          />
+          <i class="fas fa-search" onclick="performSearch()"></i>
+        </div>
+      </div>
+    </ul>
+  </section>
 
+  <!-- Main Content Wrapper for Search Targeting -->
+  <main id="mainContent">
 
-    <!-- Two columns layout start -->
+    <!-- Two-column layout -->
     <section class="two-column">
-        <div class="image">
-            <img src="./images/frinds.jpg" alt="Makeing Friends">
-        </div>
-        <div class="info">
-            <h1>Makeing Friends</h1>
-            <p>Making friends with digital technology means understanding how to use devices, apps, and the internet in positive and meaningful ways. It’s about building healthy habits, staying safe online, and using technology to connect with others, learn new things, and solve problems. By using digital tools responsibly, we can make our experiences more enjoyable and productive while also protecting our well-being.</p>
-        </div>
+      <div class="image">
+        <img src="./images/2020-Should-You-Friend-on-Social-Media-Blog-Image-min.jpeg" alt="Making Friends" />
+      </div>
+      <div class="info">
+        <h1>Making Friends</h1>
+        <p>Making friends with digital technology means understanding how to use devices, apps, and the internet in positive and meaningful ways. It’s about building healthy habits, staying safe online, and using technology to connect with others, learn new things, and solve problems. By using digital tools responsibly, we can make our experiences more enjoyable and productive while also protecting our well-being.</p>
+      </div>
     </section>
-    <!-- Two columns layout end -->
-      <!-- Two columns layout start -->
+
     <section class="two-column">
-        <div class="image">
-            <img src="./images/cyber bullying.jpg" alt="Cyber Bullying">
-        </div>
-        <div class="info">
-            <h1>Cyber Bullying</h1>
-            <p>Cyberbullying refers to the use of digital platforms (such as social media, texting, or online forums) to harass, intimidate, or harm someone. It can involve spreading harmful rumors, sending hurtful messages, sharing embarrassing photos or videos without consent, and more.
+      <div class="image">
+        <img src="./images/iStock-1369689362-1.jpg" alt="Cyber Bullying" />
+      </div>
+      <div class="info">
+        <h1>Cyber Bullying</h1>
+        <p>Cyberbullying refers to the use of digital platforms (such as social media, texting, or online forums) to harass, intimidate, or harm someone. It can involve spreading harmful rumors, sending hurtful messages, sharing embarrassing photos or videos without consent, and more.
 
                 Cyberbullying can have serious emotional, psychological, and even physical consequences for the victim. It can be particularly damaging because it's not confined to one space or time—it's persistent and can follow someone wherever they go, especially with smartphones and social media.
                 
                 Do you want to talk about how to deal with it, or are you looking for more information on its effects?
-                
-                
-                
-                
-                 </p>
-        </div>
+
+</p>
+      </div>
     </section>
-    <!-- Two columns layout end -->
-       <!-- Two columns layout start -->
+
     <section class="two-column">
-        <div class="image">
-            <img src="./images/mental health.jpg" alt="Mental Health">
-        </div>
-        <div class="info">
-            <h1>Mental Health</h1>
-            <p>Digital technology can significantly impact teens' mental health in both positive and negative ways. On one hand, it offers opportunities for social connection, self-expression, and access to helpful resources. However, excessive use, especially of social media, can lead to anxiety, depression, and low self-esteem as teens compare themselves to idealized online images and feel pressure to maintain a perfect digital persona. Cyberbullying is another serious issue, causing emotional distress that can lead to feelings of isolation or even suicidal thoughts. Additionally, constant notifications and screen time can disrupt sleep and increase stress, further harming mental well-being. Overall, while digital technology can support teens, without balance and guidance, it can contribute to significant mental health challenges.  </p>
-        </div>
+      <div class="image">
+        <img src="./images/mentalwellness_articleCR.jpg" alt="Mental Health" />
+      </div>
+      <div class="info">
+        <h1>Mental Health</h1>
+        <p>home Digital technology can significantly impact teens' mental health in both positive and negative ways. On one hand, it offers opportunities for social connection, self-expression, and access to helpful resources. However, excessive use, especially of social media, can lead to anxiety, depression, and low self-esteem as teens compare themselves to idealized online images and feel pressure to maintain a perfect digital persona. Cyberbullying is another serious issue, causing emotional distress that can lead to feelings of isolation or even suicidal thoughts. Additionally, constant notifications and screen time can disrupt sleep and increase stress, further harming mental well-being. Overall, while digital technology can support teens, without balance and guidance, it can contribute to significant mental health challenges.  </p>
+      </div>
     </section>
-    <!-- Two columns layout end -->
-     <section class="three-column">
-        <div class="card">
-            <img src="./images/education.jpg" alt="Impact on Academic Performance">
-            <h2 class="card-text">Impact on Academic Performance</h2>
-        </div>
-        <div class="card">
-            <img src="./images/harm.jpg" alt="Exposure to Harmful Content">
-            <h2 class="card-text">Exposure to Harmful Content</h2>
-        </div>
-        <div class="card">
-            <img src="./images/sleep.jpg" alt="Sleep Disruption">
-            <h2 class="card-text">Sleep Disruption</h2>
-        </div>
-     </section>
+
+
+<!-- Cards -->
+<section class="project-cards">
+  <div class="project-card">
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614323/" target="_blank">
+      <img src="./images/education.jpg" alt="Impact on Academic Performance" />
+    </a>
+    <p class="category">Website</p>
+    <h3 class="title">Academic Impact</h3>
+    <p class="description">
+      Discover how screen time affects student focus, grades, and academic routines through key research.
+    </p>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8614323/" target="_blank" class="external-link">🔗 View</a>
+  </div>
+
+  <div class="project-card">
+    <a href="https://www.nspcc.org.uk/globalassets/documents/factsheets/inappropriate-content-factsheet.pdf" target="_blank">
+      <img src="./images/harm.jpg" alt="Exposure to Harmful Content" />
+    </a>
+    <p class="category">Awareness</p>
+    <h3 class="title">Harmful Content</h3>
+    <p class="description">
+      Learn how digital exposure to violent or explicit material impacts young minds and behavior.
+    </p>
+    <a href="https://www.nspcc.org.uk/globalassets/documents/factsheets/inappropriate-content-factsheet.pdf" target="_blank" class="external-link">🔗 View</a>
+  </div>
+
+  <div class="project-card">
+    <a href="https://www.sleepfoundation.org/children-and-sleep/media-use-and-sleep" target="_blank">
+      <img src="./images/sleep.jpg" alt="Sleep Disruption" />
+    </a>
+    <p class="category">Health</p>
+    <h3 class="title">Sleep Disruption</h3>
+    <p class="description">
+      Explore the connection between nighttime screen use and sleep quality among teens and children.
+    </p>
+    <a href="https://www.sleepfoundation.org/children-and-sleep/media-use-and-sleep" target="_blank" class="external-link">🔗 View</a>
+  </div>
+</section>
+  </main>
+
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => {
+      plusSlides(1);
+    }, 5000);
+  </script>
+
+  <!-- Search Script -->
+<script>
+  function performSearch() {
+    const input = document.getElementById("searchInput").value.trim();
+    
+    if (!input) {
+      alert("Please enter a search term.");
+      return;
+    }
+
+    // Remove old highlights
+    const highlighted = document.querySelectorAll(".highlighted");
+    highlighted.forEach(el => {
+      el.outerHTML = el.textContent;
+    });
+
+    let found = false;
+    const contentArea = document.getElementById("mainContent");
+    const textElements = contentArea.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li, div, span");
+
+    // Escape special characters in input for safe regex use
+    const escapedInput = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedInput})`, "gi");
+
+    textElements.forEach(el => {
+      if (regex.test(el.innerHTML)) {
+        found = true;
+        el.innerHTML = el.innerHTML.replace(regex, '<span class="highlighted">$1</span>');
+      }
+    });
+
+    if (found) {
+      const firstMatch = document.querySelector(".highlighted");
+      if (firstMatch) {
+        firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      alert("No matches found.");
+    }
+  }
+</script>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>This site explores the effects of social media on teens' mental health, education, and well-being.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="connections.html">Connections</a></li>
+        <li><a href="Cyberbullying.html">Cyberbullying</a></li>
+        <li><a href="Influence.html">Influence</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/groups/mentalhealthawarenesssupport" target="_blank" title="Mental Health Awareness and Support Group on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/mentalhealth" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Digital Wellness Project. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
 </body>
-</html>   
+</html>
